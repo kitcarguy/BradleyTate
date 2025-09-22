@@ -1,0 +1,9 @@
+id: digibyte
+name: DigiByte Node
+tagline: Full DigiByte (DGB) node
+description: Run a full DigiByte node for mining or network participation on Umbrel.
+category: Node
+version: 0.0.1
+icon: https://raw.githubusercontent.com/kitcarguy/BradleyTate/main/apps/digibyte/icon.png
+port: 14022
+repository: https://github.com/kitcarguy/BradleyTate
