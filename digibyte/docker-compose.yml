@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  digibyte-node:
+    image: digibyte/digibyte:latest
+    container_name: digibyte-node
+    restart: unless-stopped
+    volumes:
+      - digibyte-data:/root/.digibyte
+      - ./digibyte.conf:/root/.digibyte/digibyte.conf:ro
+    ports:
+      - "14022:14022"
+
+volumes:
+  digibyte-data:
