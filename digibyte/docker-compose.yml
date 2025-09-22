@@ -6,8 +6,8 @@ services:
     container_name: digibyte-node
     restart: unless-stopped
     volumes:
-      - digibyte-data:/root/.digibyte
       - ./digibyte.conf:/root/.digibyte/digibyte.conf:ro
+      - digibyte-data:/root/.digibyte
     ports:
       - "14022:14022"
 
